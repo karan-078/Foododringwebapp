@@ -8,18 +8,21 @@ import UserLink from "./UserLink";
 const Navbar = () => {
   const user = false;
   return (
-    <div className="h-10 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500/40 shadow-sm z-10 uppercase md:h-24 lg:px-20 xl:px-40">
-      <div className="hidden md:flex gap-4 flex-1">
+    <div className="h-10 text-[#3a465b] p-4 flex items-center justify-between border-b-2 border-[#f47d38]/40 shadow-sm z-20 uppercase md:h-24 lg:px-40 xl:px-20  sticky top-0  left-0 bg-[#ffffff]">
+
+         {/* logo- */}
+
+         <div className="text-xl md:font-bold flex-1 ">
+        <Link href="/" >Pizzanauts</Link>
+      </div>
+
+      <div className="hidden md:flex  gap-4 lg:gap-8 flex-1">
         {/* Left Links */}
-        <Link href="/">Homepage</Link>
+        <Link href="/">Home</Link>
         <Link href="/menu">Menu</Link>
         <Link href="/">Contact</Link>
       </div>
-      {/* logo- */}
-
-      <div className="text-xl md:font-bold flex-1 md:text-center">
-        <Link href="/">bhookAd</Link>
-      </div>
+   
 
       {/* moile menu */}
 
@@ -29,13 +32,11 @@ const Navbar = () => {
 
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-4 items-center justify-end lg:gap-12 flex-1">
-        <div className="md:absolute top-3 r-2 lg:static  flex items-center gap-2 cursor-pointer bg-orange-300 px-1 rounded-md ">
-          <Image src="/phone.png" alt="/" width={20} height={20} />
-
-          <span>1234 45678</span>
-        </div>
-         <UserLink/>
+      
+     
         <CartIcon />
+         <UserLink />
+     
       </div>
     </div>
   );

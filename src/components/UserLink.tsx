@@ -8,7 +8,7 @@ const UserLink = () => {
     <div>
       {status === "authenticated" ? (
         <div>
-          <Link href={"/orders"}>Orders</Link>
+          <Link href={"/orders"} className="pr-4">Orders</Link>
           <span onClick={() => signOut()}>Logout</span>
         </div>
       ) : (

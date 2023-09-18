@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .Wraper{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  } */
+
+  .wrap-container{
+    padding: 2rem 0 2rem 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 18rem;
+    /* Center slide text vertically */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+   .swiper-slide {
+    width: 50rem;
+
+   }
+
+ .swiper-wrapper{
+  width: 100%;
+ }
+
